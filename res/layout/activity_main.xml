@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button1"
+    android:layout_alignBottom="@+id/button1"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="49dp"
+    android:text="计数" />
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_above="@+id/button2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    class="com.ferris.ottodb.DbFragment" />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="24dp"
+    android:text="初始化" />
+
+</RelativeLayout>
